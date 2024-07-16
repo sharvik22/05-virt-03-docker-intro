@@ -80,6 +80,47 @@ https://hub.docker.com/repository/docker/sharvik22/my-nginx-image/general
 
 ## Решение 2
 
+1. Я сделал образ с именим sharvik22/my-nginx-image:1.0.0
+Удалил все образы и контейнеры и заново загрузил свой образ с dockerhub
+остановить все контейнеры
+docker stop $(docker ps -a -q)
+
+удалить все контейнеры
+docker rm $(docker ps -a -q)
+
+удалить все образы
+docker rmi $(docker images -q)
+
+загрузить  образ
+docker push sharvik22/my-nginx-image:tagname
+
+![Screenshot_2](https://github.com/user-attachments/assets/cc95b456-09f5-46e7-8ae0-4cae1e5fcaa1)
+
+![Screenshot_3](https://github.com/user-attachments/assets/cb3bdd08-7cb3-4577-96d3-dbdf44d1bde6)
+
+2. Переименуйте контейнер в "custom-nginx-t2"
+
+остановиил и удалил контейнер и заново создал с именем custom-nginx-t2 и своим образом 
+
+![Screenshot_6](https://github.com/user-attachments/assets/71902d1d-757f-4d06-b299-027c628dba22)
+
+
+3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
+
+ ![Screenshot_7](https://github.com/user-attachments/assets/2936acc1-d86a-4ecc-8d10-7f0e3293538c)
+
+
+ 4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
+
+ ![image](https://github.com/user-attachments/assets/299de4d9-d977-4e72-9a0b-7614be16ec28)
+
+
+
+
+
+
+
+
 ---
 
 
