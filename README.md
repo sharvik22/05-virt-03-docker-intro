@@ -119,15 +119,7 @@ docker push sharvik22/my-nginx-image:tagname
 
  ![image](https://github.com/user-attachments/assets/299de4d9-d977-4e72-9a0b-7614be16ec28)
 
-
-
-
-
-
-
-
 ---
-
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -146,6 +138,26 @@ docker push sharvik22/my-nginx-image:tagname
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 ## Решение 3
+
+1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
+docker attach custom-nginx-t2
+docker logs custom-nginx-t2
+
+![Screenshot_1](https://github.com/user-attachments/assets/8a8b40a4-e734-40ed-8d38-c161a6eddb52)
+
+![Screenshot_2](https://github.com/user-attachments/assets/0e8d55c4-8774-46c0-b5dc-b4fcf74b303f)
+
+2. Подключитесь к контейнеру и нажмите комбинацию Ctrl-C.
+
+![image](https://github.com/user-attachments/assets/00780bfe-6fe5-4aea-9773-2b481e7469ae)
+
+3. Выполните ```docker ps -a``` и объясните своими словами почему контейнер остановился.
+
+
+
+
+
+
 
 ---
 
