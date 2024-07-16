@@ -35,9 +35,34 @@ Hey, Netology
  
 ![Screenshot_10](https://github.com/user-attachments/assets/5f86e807-3b75-4f5e-a9ba-d5dde609e057)
 
-  
+- скачайте образ nginx:1.21.1;
 
+![Screenshot_3](https://github.com/user-attachments/assets/60fcb613-fdcc-469b-a3fe-10e3a16c5ccb)
 
+- Создайте Dockerfile и реализуйте в нем замену дефолтной индекс-страницы(/usr/share/nginx/html/index.html), на файл index.html с содержимым:
+
+создал файл Dockerfile c содержимым
+
+![Screenshot_4](https://github.com/user-attachments/assets/c7e530c8-6406-4139-8559-d27841448c84)
+
+и файл index.html
+
+![image](https://github.com/user-attachments/assets/9ddf0410-99bd-4872-ba6f-b23e0b35a6e2)
+
+- Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 (ТОЛЬКО ЕСЛИ ЕСТЬ ДОСТУП).
+
+собрал образ
+
+![Screenshot_8](https://github.com/user-attachments/assets/08037bc8-fccf-4e61-9d2d-ba87821ae14a)
+
+залогинлся на dockerhub и отправил образ
+
+![Screenshot_9](https://github.com/user-attachments/assets/15df38dd-227c-46a3-aa6c-06084a0bd373)
+
+![Screenshot_11](https://github.com/user-attachments/assets/85b038f9-d0b5-42d1-94d0-b3025aec3551)
+
+- Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
+https://hub.docker.com/repository/docker/sharvik22/my-nginx-image/general
 
 ---
 
