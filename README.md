@@ -153,11 +153,63 @@ docker logs custom-nginx-t2
 
 3. Выполните ```docker ps -a``` и объясните своими словами почему контейнер остановился.
 
+Контейнер не остановился, комбинацию Ctrl-C - команда прерывания процесса (SIGINT). docker stop custom-nginx-t2 - остановит контейнер.
+
+![image](https://github.com/user-attachments/assets/abc966df-6019-4776-94d8-6268b0a6cd58)
+
+4. Перезапустите контейнер
+
+![image](https://github.com/user-attachments/assets/84996b71-fd11-4847-8b98-f8a4571c6b18)
+
+5. Зайдите в интерактивный терминал контейнера "custom-nginx-t2" с оболочкой bash.
+
+![image](https://github.com/user-attachments/assets/7ada7ae1-c0ed-4dbe-9d6c-d9f44c4991ac)
+
+6. Установите любимый текстовый редактор(vim, nano итд) с помощью apt-get.
+
+![image](https://github.com/user-attachments/assets/34d09a41-23c6-4de8-95ee-e25dcdfc8c7c)
+
+![image](https://github.com/user-attachments/assets/4e1daf30-0f92-4603-bf0f-4be722953eef)
+
+7. Отредактируйте файл "/etc/nginx/conf.d/default.conf", заменив порт "listen 80" на "listen 81".
+
+![image](https://github.com/user-attachments/assets/c9308ce6-fd7d-4ef8-9649-a8ce4d5c2a9a)
+
+![image](https://github.com/user-attachments/assets/3061322d-a795-4ce5-9f89-e327ff7a622c)
 
 
+8. Запомните(!) и выполните команду ```nginx -s reload```, а затем внутри контейнера ```curl http://127.0.0.1:80 ; curl http://127.0.0.1:81```.
+
+![image](https://github.com/user-attachments/assets/ffdc39da-ce27-4ce8-bd64-a07792fa20e1)
 
 
+9. Выйдите из контейнера, набрав в консоли  ```exit``` или Ctrl-D.
 
+![image](https://github.com/user-attachments/assets/3b42cf0a-e7f8-4099-93f4-446d20b3c957)
+
+10. Проверьте вывод команд: ```ss -tlpn | grep 127.0.0.1:8080``` , ```docker port custom-nginx-t2```, ```curl http://127.0.0.1:8080```. Кратко объясните суть возникшей проблемы.
+
+![image](https://github.com/user-attachments/assets/b1ed8c5e-a023-45c2-b01e-687e2f47f5bb)
+
+ss -tlpn | grep 127.0.0.1:8080 - 
+ss - команда, которая выводит информацию о сокетах, -tlpn - это её флаги. grep 127.0.0.1:8080 - фильтрует вывод (вывод, только тех строк, где есть 127.0.0.1:8080)
+вывод будет пустой, т.к. у нас нет сокетов, процессов, прослушивающих порт 8080
+
+docker port custom-nginx-t2
+выводит список портов с которыми запускался контейнер custom-nginx-t2 (сопостовление портов в внутри и снаружи контейнера)
+
+0.0.0.0:8080->80/tcp, :::8080->80/tcp
+
+curl http://127.0.0.1:8080
+команда проверки доступности по HTTP протоколу.ОТправка запроса по IP и порту. Результат - ответа нет, по данному IP и порту/
+
+Суть проблемы нет доступа или не доступен ресурс по 127.0.0.1:8080
+docker port custom-nginx-t2 - рузультат дал, так как при запуске был проброс портов у контейнера.
+
+
+13. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
+
+![image](https://github.com/user-attachments/assets/73e5221f-ecd7-40fb-8a34-f2d93e99ad9e)
 
 ---
 
