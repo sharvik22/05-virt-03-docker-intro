@@ -80,7 +80,12 @@ https://hub.docker.com/repository/docker/sharvik22/my-nginx-image/general
 
 ## Решение 2
 
-1. Я сделал образ с именим sharvik22/my-nginx-image:1.0.0
+1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
+- имя контейнера "ФИО-custom-nginx-t2"
+- контейнер работает в фоне
+- контейнер опубликован на порту хост системы 127.0.0.1:8080
+  
+Я сделал образ с именим sharvik22/my-nginx-image:1.0.0
 Удалил все образы и контейнеры и заново загрузил свой образ с dockerhub
 остановить все контейнеры
 docker stop $(docker ps -a -q)
