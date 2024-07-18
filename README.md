@@ -301,6 +301,17 @@ services:
 
 ## Решение 5
 
+1.
+
+![image](https://github.com/user-attachments/assets/3f23e9ac-cf39-4280-97a2-f9326faebfb6)
+
+![image](https://github.com/user-attachments/assets/5f631beb-1c13-4941-af71-21a358ab4d03)
+
+Какой из файлов был запущен и почему?
+
+
+
+
 ---
 
 ### Правила приема
