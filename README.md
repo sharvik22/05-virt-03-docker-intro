@@ -320,6 +320,27 @@ services:
 ![image](https://github.com/user-attachments/assets/99d73f99-6911-46f5-b20f-cabfd584e87c)
 
 
+3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry
+
+docker build -t custom-nginx:latest
+docker ps -a
+docker images
+docker tag custom-nginx localhost:5000/custom-nginx:latest
+docker tag nginx localhost:5000/custom-nginx:latest
+docker images
+docker ps -a
+docker push localhost:5000/custom-nginx:latest
+docker images
+
+4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
+
+![image](https://github.com/user-attachments/assets/5022ca7b-74f6-4d5e-913a-bf99e342cb5d)
+
+![image](https://github.com/user-attachments/assets/a80dff08-3088-4660-abb1-05b97d144353)
+
+![image](https://github.com/user-attachments/assets/8b27ccf5-500f-411a-8489-e8ee1e7e3840)
+
+
 
 ---
 
