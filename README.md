@@ -310,7 +310,16 @@ services:
 Какой из файлов был запущен и почему?
 
 При выполнении команды docker compose up -d, Docker Compose будет искать файл по умолчанию, это docker-compose.yaml или docker-compose.yml.
-Поскольку docker-compose.yaml является именем по умолчанию, будет запущен файл docker-compose.yamlс это серверное приложение registry.
+Поскольку docker-compose.yaml является стандартным именем, то будет запущен файл docker-compose.yaml с серверным приложением registry.
+
+
+2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла.
+
+ ![image](https://github.com/user-attachments/assets/0c9d65ae-2b7f-4a3d-be66-13138f8f44a5)
+
+![image](https://github.com/user-attachments/assets/99d73f99-6911-46f5-b20f-cabfd584e87c)
+
+
 
 ---
 
