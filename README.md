@@ -323,13 +323,21 @@ services:
 3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry
 
 docker build -t custom-nginx:latest
+
 docker ps -a
+
 docker images
+
 docker tag custom-nginx localhost:5000/custom-nginx:latest
+
 docker tag nginx localhost:5000/custom-nginx:latest
+
 docker images
+
 docker ps -a
+
 docker push localhost:5000/custom-nginx:latest
+
 docker images
 
 4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
