@@ -245,7 +245,7 @@ docker port custom-nginx-t2 - результат дал, так как при з
 
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
-![image](https://github.com/user-attachments/assets/0a4a5f95-c7d3-4168-9fdb-e7a8e4386527)
+![image](https://github.com/user-attachments/assets/5d4dcfe0-991f-40c5-b089-00eb195dda83)
 
 ---
 
