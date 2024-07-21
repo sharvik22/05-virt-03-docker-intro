@@ -335,19 +335,6 @@ services:
 ![image](https://github.com/user-attachments/assets/970910af-dd79-4071-9976-3e448afbfdeb)
 
 
-![image](https://github.com/user-attachments/assets/06d156e9-721f-442b-831c-77c3a92753ab)
-
-![image](https://github.com/user-attachments/assets/ea61a688-5fd8-4544-ab84-a6882532157e)
-
-
-![image](https://github.com/user-attachments/assets/8e626fba-bf32-477d-8620-822030371baa)
-
-
-![image](https://github.com/user-attachments/assets/c43186ec-3c31-469e-8477-b25c68e094c6)
-
-![image](https://github.com/user-attachments/assets/ff6aef34-11af-433a-891d-ec14a8476a3b)
-
-
 4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
 
 ![image](https://github.com/user-attachments/assets/5022ca7b-74f6-4d5e-913a-bf99e342cb5d)
@@ -358,8 +345,23 @@ services:
 
 5. Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local  окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
 
+![image](https://github.com/user-attachments/assets/06d156e9-721f-442b-831c-77c3a92753ab)
+
+![image](https://github.com/user-attachments/assets/ea61a688-5fd8-4544-ab84-a6882532157e)
 
 
+![image](https://github.com/user-attachments/assets/8e626fba-bf32-477d-8620-822030371baa)
+
+
+![image](https://github.com/user-attachments/assets/c43186ec-3c31-469e-8477-b25c68e094c6)
+
+
+6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
+
+![image](https://github.com/user-attachments/assets/ff6aef34-11af-433a-891d-ec14a8476a3b)
+
+
+7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 
 ---
 
