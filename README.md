@@ -355,7 +355,22 @@ services:
 
 7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 
+![image](https://github.com/user-attachments/assets/76bff0db-1eb2-4191-9417-de47777a97d2)
 
+
+![image](https://github.com/user-attachments/assets/664370d5-6c10-49bd-9ed9-d7b18bb34f7c)
+
+
+Это предупреждение указывает на то, что есть контейнеры, которые были созданы для сервисов, которые больше не определены в вашем файле docker-compose.yml. Эти контейнеры называются "осиротевшими" (orphan containers).
+
+Чтобы убрать это предупреждение и удалить осиротевшие контейнеры, вы можете запустить команду docker-compose с флагом --remove-orphans. 
+
+docker-compose up --remove-orphans
+
+
+Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+
+docker-compose down --remove-orphans
 
 ---
 
