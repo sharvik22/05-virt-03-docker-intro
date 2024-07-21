@@ -64,8 +64,9 @@ Hey, Netology
 - Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
 https://hub.docker.com/repository/docker/sharvik22/my-nginx-image/general
 
----
+![image](https://github.com/user-attachments/assets/4b2f87f3-1aab-4a6f-a458-48b1781a218a)
 
+---
 
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
