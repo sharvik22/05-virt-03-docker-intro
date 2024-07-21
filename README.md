@@ -345,10 +345,6 @@ services:
 
 5. Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local  окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз:
 
-![image](https://github.com/user-attachments/assets/06d156e9-721f-442b-831c-77c3a92753ab)
-
-![image](https://github.com/user-attachments/assets/ea61a688-5fd8-4544-ab84-a6882532157e)
-
 
 ![image](https://github.com/user-attachments/assets/8e626fba-bf32-477d-8620-822030371baa)
 
