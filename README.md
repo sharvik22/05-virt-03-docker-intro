@@ -347,27 +347,6 @@ services:
 ![image](https://github.com/user-attachments/assets/ff6aef34-11af-433a-891d-ec14a8476a3b)
 
 
-
-docker build -t custom-nginx:latest
-
-docker ps -a
-
-docker images
-
-docker tag custom-nginx localhost:5000/custom-nginx:latest
-
-docker tag nginx localhost:5000/custom-nginx:latest
-
-docker images
-
-docker ps -a
-
-docker push localhost:5000/custom-nginx:latest
-
-docker images
-
-p.s. не сохранился скриншот команд, вот чать с history
-
 4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.(логин и пароль адмнистратора)
 
 ![image](https://github.com/user-attachments/assets/5022ca7b-74f6-4d5e-913a-bf99e342cb5d)
